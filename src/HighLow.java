@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class HighLow {
+
     public static void highLow() {
 
         // Game Development 101: You are going to build a high-low guessing game.

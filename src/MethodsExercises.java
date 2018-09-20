@@ -74,18 +74,24 @@ public class MethodsExercises{
     // A factorial is a number multiplied by each of the numbers before it.
     // Factorials are denoted by the exclamation point (n!). Ex:
 
-//    public static int factorial(){
-//            System.out.println("Please enter an integer between 1 and 10");
-//            Scanner scanner = new Scanner(System.in);
-//            int input = scanner.nextInt();
-//            if (input<1){
-//                int output = 0;
-//                return output;
-//            }
-//        System.out.println(input);
-//            return input
-//        }
-//    }
+    public static void factorial(){
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Please enter an integer between 1 and 10");
+            long input = scanner.nextInt();
+            long output = 0;
+            if (input<1){
+                System.out.println(output);
+            }
+            if (input > 10) System.out.println("Enter an integer between 1 and 10");
+            output = input;
+            for(long i = output-1; i > 0; --i){
+                output *= i;
+            }
+        System.out.println(input +"! = "+ output);
+
+
+        }
+
 
 
 
@@ -117,8 +123,9 @@ public class MethodsExercises{
     public static void main(String[] args) {
         System.out.println(multiplication2(6,7));
         System.out.println(modulus(9, 2));
-        getInteger(0, 12);
-        diceRoll(6);
+//        getInteger(0, 12);
+//        diceRoll(6);
+        factorial();
 
     }
 }

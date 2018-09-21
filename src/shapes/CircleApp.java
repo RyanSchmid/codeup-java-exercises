@@ -1,9 +1,12 @@
 package shapes;
+import
 
 public class CircleApp {
 
+    int userRadius;
 
     public static void main(String[] args) {
+
 
     }
 
@@ -11,10 +14,5 @@ public class CircleApp {
     // for the radius of the circle using your Input class,
     // creates a Circle object, and displays the circumference and area.
     // (Note that you will need to import your Input class.)
-
-    double pi = Math.PI;
-
-    //    circumference = 2 x pi x radius
-    //    area = pi x (radius ^ 2)
 
 }

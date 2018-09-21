@@ -3,6 +3,7 @@ package shapes;
 public class Circle {
 
     private double radius;
+    double pi = Math.PI;
 
     public static void main(String[] args) {
     // main
@@ -16,12 +17,13 @@ public class Circle {
     public Circle(double radius){
         this.radius = radius;
     }
+
     public double getArea(){
-        return (Math.PI * radius * radius)
+        return (pi * radius * radius)
     }
 
     public double getCircumference(){
-        return (2 * Math.PI * this.radius)
+        return (2 * pi * this.radius)
     }
 
 

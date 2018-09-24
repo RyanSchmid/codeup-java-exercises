@@ -15,7 +15,7 @@ public class Bob {
         do {
             Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine();
-            if (input.contains("bye")){
+            if (input.toLowerCase().contains("bye")){
                 System.out.println("Bob walked away");
                 condition = false;
             }
@@ -24,5 +24,17 @@ public class Bob {
             else if (input.isEmpty()) System.out.println("Bob says: \"Fine. Be that way!\"");
             else System.out.println("Bob says: \"Whatever.\"");
         } while (condition);
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

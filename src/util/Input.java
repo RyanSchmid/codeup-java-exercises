@@ -61,12 +61,6 @@ public class Input {
 
 
     public static void main(String[] args) {
-        getString();
-        yesNo();
-        getInt(0, 10);
-        getInt();
-        getDouble(0, 500);
-        getDouble();
 
     }
 

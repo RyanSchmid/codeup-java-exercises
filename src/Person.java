@@ -1,9 +1,8 @@
 public class Person {
-
-    private String name;
+    public String name;
 
     //constructor
-    private Person(String name){
+    public Person(String name){
         this.name = name;
     }
 

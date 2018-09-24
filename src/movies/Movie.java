@@ -1,31 +1,30 @@
 package movies;
 
 public class Movie {
-    String title;
-    String category;
+    private String name;
+    private String category;
 
     public Movie(String movieName, String movieCategory) {
-            this.title = movieName;
+            this.name = movieName;
             this.category = movieCategory;
         }
-    }
 
     // ### GETTERS ### //
-    public getMovieName(){
-        return title;
+    public String getMovieName(){
+        return name;
     }
 
-    public getMovieCategory(){
+    public String getMovieCategory(){
         return category;
     }
 
     // ### SETTERS ### //
 
-    public setMovieName(String newName){
-        this.title = newName;
+    public void setMovieName(String newName){
+        this.name = newName;
     }
 
-    public setMovieCategory(String newCategory){
+    public void setMovieCategory(String newCategory){
         this.category = newCategory;
     }
 
@@ -34,12 +33,12 @@ public class Movie {
     }
 
 
-    // Create a class named Movie.
-    // It should have private fields for name and category,
-    // and a constructor that sets both of these.
-    // Create methods to access these properties and
-    // change them (getters and setters).
+//     Create a class named Movie.
+//     It should have private fields for name and category,
+//     and a constructor that sets both of these.
+//     Create methods to access these properties and
+//     change them (getters and setters).
 
 
 
-}
+ }

@@ -39,7 +39,7 @@ public class Input {
         return input;
     }
 
-    double getDouble() {
+    public double getDouble() {
         double input = scan.nextDouble();
         System.out.println(input);
         return input;

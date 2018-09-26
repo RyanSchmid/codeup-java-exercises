@@ -11,13 +11,14 @@ public class Sandbox {
 
     public static void main(String[] args) {
 
-        recurse(4);
-        countdown(5);
-        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        for (int num : numbers) System.out.print(num + " ");
-        System.out.println();
-        for (int num : reverse(numbers)) System.out.print(num + " ");
+//        recurse(4);
+//        countdown(5);
+//        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+//        for (int num : numbers) System.out.print(num + " ");
+//        System.out.println();
+//        for (int num : reverse(numbers)) System.out.print(num + " ");
 
+        System.out.println(countUp(7));
     }
 
     public static int countdown(int x) {
@@ -41,6 +42,21 @@ public class Sandbox {
             backwards[backwards.length - i - 1] = nums[i];
         }
         return backwards;
+    }
+
+
+
+
+    public static int countUp(int counter){
+        if (counter == 1) {
+            System.out.println(counter);
+            return counter;
+        }
+        else {
+            countUp(counter-1);
+            System.out.println(counter);
+        };
+        return counter;
     }
 
 

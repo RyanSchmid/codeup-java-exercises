@@ -1,28 +1,35 @@
 package shapes;
 
-public class Rectangle extends Quadrilateral {
+public class Rectangle extends Quadrilateral{
 
-    public Rectangle(int length, int width) {
+    public Rectangle(double length, double width) {
         super(length, width);
     }
 
-    public void setLength(int length){
+    @Override
+    public void setLength(double length) {
         this.length = length;
     }
 
-    public void setWidth(int width){
+    @Override
+    public void setWidth(double width) {
         this.width = width;
     }
 
-    public double getPerimeter(){
+    @Override
+    public double getPerimeter() {
         return 2*(this.length + this.width);
     }
 
-    public double getArea(){
-        return (this.length * this.width);
+    @Override
+    public double getArea() {
+        return (this.length*this.width);
     }
 
-//    INHERITANCE EXERCISE //
+    // implementing Measurable requires implementing all of the methods
+    // included/ declared within the Measurable interface
+
+    //    INHERITANCE EXERCISE //
 //    protected int length;
 //    protected int width;
 //

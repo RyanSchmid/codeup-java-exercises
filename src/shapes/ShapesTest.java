@@ -3,6 +3,22 @@ package shapes;
 public class ShapesTest {
 
     public static void main(String[] args) {
+
+        Measurable myShape = new Rectangle(5, 4.0001);
+        System.out.println(myShape.getPerimeter());
+        System.out.println(myShape.getArea());
+
+        myShape = new Square(4.0001);
+        System.out.println(myShape.getPerimeter());
+        System.out.println(myShape.getArea());
+
+        ((Square) myShape).getLength();
+
+        //when we call getLength() on myShape, it has to cast it to a type that
+        // is included in it's interface
+
+
+        // PRIOR EXERCISE
 //        //  create a variable of the type Rectangle named box1
 //        //  assign it a new instance of the Rectangle class with a width of 4 and a length of 5
 //

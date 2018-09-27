@@ -13,7 +13,7 @@ public class Input {
 
     public String getString() {
         String input = scan.nextLine();
-        System.out.println(input);
+//        System.out.println(input);
         return input;
     }
 

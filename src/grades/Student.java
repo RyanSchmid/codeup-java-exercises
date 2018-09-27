@@ -22,7 +22,7 @@ public class Student {
     public void addGrade(int grade){
         this.grades.add(grade);
     }
-    // returns the average of the students grades
+    // returns the average of the records grades
     public double getGradeAverage(){
         int sum = 0;
         for (int grade: this.grades) sum += grade;
@@ -31,8 +31,14 @@ public class Student {
 
     @Override
     public String toString(){
-        return this.name.toString();
+        return "Name: " + this.name + "\n" +
+                "Grades Average: " + this.getGradeAverage() + "\n";
     }
+
+//    @Override
+//    public String toString(){
+//        return this.name.toString();
+//    }
 
     public static void main(String[] args) {
         Student ryan = new Student("Ryan");

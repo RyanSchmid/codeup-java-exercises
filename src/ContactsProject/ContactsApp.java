@@ -1,25 +1,17 @@
 package ContactsProject;
-import grades.Student;
-import movies.Movie;
-import movies.MoviesArray;
-import util.Input;
-
 import java.util.HashMap;
-
+import util.Input;
 
 public class ContactsApp {
 
 
-    private static void displayContacts(String filter) {
-//        Movie[] all = MoviesArray.findAll();
-//        if (filter.equalsIgnoreCase("all")) {
-//            for (Movie movie : all) System.out.println(movie.getMovieName() + " -- " + movie.getMovieCategory());
-//        } else {
-//            for (Movie movie : all) {
-//                if (movie.getMovieCategory().equalsIgnoreCase(filter))
-//                    System.out.println(movie.getMovieName() + " -- " + movie.getMovieCategory());
+
+//    public static void searchContactsByNumber(Long number) {
+//        Contact[] all = ContactList.findAll();
+//        for (Contact contact : all) {
+//            if (contact.getPhoneNumber().toString()) {
+//                System.out.println(contact.getFirstName() + " " + contact.getLastName() + " -- " + contact.getPhoneNumber());
 //            }
 //        }
-
-    }
+//    }
 }
